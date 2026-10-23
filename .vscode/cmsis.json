@@ -1,0 +1,9 @@
+{
+    "targetSet": {
+        "MDK-ARM/testGPIO": {
+            "activeTargetType": "testGPIO"
+        }
+    },
+    "activeSolution": "../MDK-ARM/testGPIO.csolution.yml",
+    "activeTarget": "testGPIO"
+}

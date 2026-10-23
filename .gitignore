@@ -1,0 +1,43 @@
+# ============================================
+# STM32 / CMSIS-Toolbox 工程忽略规则
+# ============================================
+
+# --- cbuild (VS Code / CMSIS) 构建输出 ---
+MDK-ARM/out/
+MDK-ARM/tmp/
+*.cbuild-idx.yml
+*.cbuild-pack.yml
+
+# --- Keil uVision 构建输出 ---
+MDK-ARM/*/               # Keil 的 Objects 目录（存放 .axf / .hex）
+MDK-ARM/DebugConfig/
+*.build_log.htm
+
+# --- 编译产物 ---
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.d
+*.dep
+*.lnp
+*.crf
+*.lst
+*.srec
+
+# --- Keil 工程用户态文件（每人不同，不该进仓库） ---
+*.uvguix.*
+*.uvguix
+*.bak
+*.log
+
+# --- 调试器 / IDE 缓存 ---
+.vscode/.cmsis/
+.settings/
+
+# --- 系统 ---
+.DS_Store
+Thumbs.db
+# TODO: 蜂鸣器 PB5 练习
